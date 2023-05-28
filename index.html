@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UX | UI designer landing page">
+  <title>Denis Novik</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="home" data-header>
+      <div class="container">
+        <nav class="header__nav" id="header-nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header_nav-item">
+              <a class="header__nav-link  header__nav-link--active" href="home" data-navigation-link>Home</a>
+            </li>
+            <li class="header_nav-item">
+              <a class="header__nav-link" href="#about" data-navigation-link>About me</a>
+            </li>
+            <li class="header_nav-item">
+              <a class="header__nav-link" href="#skills" data-navigation-link>Skills</a>
+            </li>
+            <li class="header_nav-item">
+              <a class="header__nav-link" href="#portfolio" data-navigation-link>Portfolio</a>
+            </li>
+            <li class="header_nav-item">
+              <a class="header__nav-link" href="#contacts" data-navigation-link>Contacts</a>
+            </li>
+          </ul>
+          <fieldset class="header__lang-switch">
+            <legend class="visually-hidden">Сменить язык</legend>
+            <input class="header__lang-switch-control visually-hidden" type="radio" id="ru" name="lang" value="ru"
+              checked="checked">
+            <label class="header__lang-switch-label" for="ru">RU</label>
+            |
+            <input class="header__lang-switch-control visually-hidden" type="radio" id="eng" name="lang" value="eng">
+            <label class="header__lang-switch-label" for="eng">ENG</label>
+          </fieldset>
+        </nav>
+        <button class="header__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
+          aria-controls="header-nav" data-burger="">
+          <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+          <svg class="header__burger-close" width="23" height="23" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </header>
+    <main>
+      <section class="intro" id="intro">
+        <div class="container">
+          <div class="intro__content">
+            <h1>Denis<br> Novik</h1>
+            <p>UX | UI designer<br> 24 years old, Minsk</p>
+          </div>
+          <div class="intro__picture">
+            <picture>
+              <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
+              <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Designer's photo." width="944" height="387">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <p>Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.
+          </p>
+          <p>I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.</p>
+          <p>Ready to implement excellent projects<br> with wonderful people.</p>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <p>I work in such programs as</p>
+          <ul class="skills_list list-reset">
+            <li class="skills_item">
+              <figure>
+                <img src="img/png/ps.png" alt="Photoshop logo." width="89" height="89">
+                <figcaption>Adobe Photoshop</figcaption>
+              </figure>
+              <span data-raiting="4">
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="skills_item">
+              <figure>
+                <img src="img/png/ai.png" alt="llustrator logo." width="89" height="89">
+                <figcaption>Adobe llustrator</figcaption>
+              </figure>
+              <span data-raiting="3">
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="skills_item">
+              <figure>
+                <img src="img/png/ae.png" alt="After Effects logo." width="89" height="89">
+                <figcaption>Adobe<br>After Effects</figcaption>
+              </figure>
+              <span data-raiting="4">
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="skills_item">
+              <figure>
+                <img src="img/png/fgm.png" alt="Figma logo." width="58" height="89">
+                <figcaption>Figma</figcaption>
+              </figure>
+              <span data-raiting="4">
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <ul class="list-reset">
+            <li>
+              <figure>
+                <picture>
+                  <source srcset="img/portfolio-1.webp 1x, img/portfolio-1@2x.webp 2x" type="image/webp">
+                  <img src="img/portfolio-1.jpg" srcset="img/portfolio-1@2x.jpg 2x" alt="Example of work." width="944"
+                    height="387">
+                </picture>
+                <figcaption>Online fashion store - Homepage</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <picture>
+                  <source srcset="img/portfolio-2.webp 1x, img/portfolio-2@2x.webp 2x" type="image/webp">
+                  <img src="img/portfolio-2.jpg" srcset="img/portfolio-2@2x.jpg 2x" alt="Example of work." width="937"
+                    height="522">
+                </picture>
+                <figcaption>Reebok Store - Concept</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <picture>
+                  <source srcset="img/portfolio-3.webp 1x, img/portfolio-3@2x.webp 2x" type="image/webp">
+                  <img src="img/portfolio-3.jpg" srcset="img/portfolio-3@2x.jpg 2x" alt="Example of work." width="937"
+                    height="522">
+                </picture>
+                <figcaption>Braun Landing Page - Concept</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <h2 class="footer__title">Contacts</h2>
+        <p class="footer__text">Want to know more or just chat?<br> You are welcome!</p>
+        <button class="footer__button" type="button">Send message</button>
+        <ul class="footer__social-list list-reset">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://linkedin.com">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#social-linkedin"></use>
+              </svg>
+              <span class="visually-hidden">Linkedin link.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https:/instagram.com">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#social-instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram link.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://behance.com">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#social-behance"></use>
+              </svg>
+              <span class="visually-hidden">Behance link.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://dribble.com">
+              <svg width="40" height="40">
+                <use xlink:href="img/sprite.svg#social-dribble"></use>
+              </svg>
+              <span class="visually-hidden">Dribble link.</span>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__social-text">Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
