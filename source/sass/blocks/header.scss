@@ -1,0 +1,206 @@
+.header {
+  transition: opacity 0.3s ease 0.1s;
+
+  &__burger-icon {
+    transition: opacity 0.3s ease 0.1s;
+    cursor: pointer;
+
+    .is-open & {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease 0s;
+    }
+  }
+}
+
+.header .container {
+  position: relative;
+}
+
+.header__nav {
+  @include vp-767 {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 66px 20px;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    transition: all 0.3s ease;
+    right: 0;
+    visibility: hidden;
+    background-color: $color-default-white;
+    z-index: 20;
+  }
+
+  .is-open & {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
+
+.header__nav-list {
+  position: relative;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-gray;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    flex-direction: column;
+    gap: 52px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.header__nav-link {
+  padding: 10px 5px;
+  font-weight: 700;
+  color: $color-gray;
+  transition: color $trans-default;
+
+  @include vp-767 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  &--active {
+    color: $color-default-black;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  @include hover-focus {
+    color: $color-blue;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-blue;
+    outline-offset: 1px;
+  }
+}
+
+.header__burger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  position: relative;
+  z-index: 25;
+
+  @include vp-767 {
+    padding: 5px;
+    position: absolute;
+    right: 26px;
+    top: 57px;
+    display: flex;
+    cursor: pointer;
+    transition: all $trans-default;
+  }
+
+  @include hover-focus {
+    svg {
+      color: $color-blue;
+    }
+  }
+
+  &:hover {
+    svg {
+      color: $color-blue;
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-blue;
+    outline-offset: 1px;
+  }
+
+  .header__burger-close {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    cursor: pointer;
+
+    .is-open & {
+      opacity: 1;
+      pointer-events: all;
+      transition: all $trans-default;
+    }
+  }
+
+  .is-open {
+    .header__burger-icon {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .header__burger-close {
+      opacity: 1;
+      pointer-events: all;
+      transition: color 0.3s ease 0.2s;
+    }
+  }
+}
+
+.header__lang-switch {
+  position: absolute;
+  right: 12px;
+  top: 178px;
+  margin: 0;
+  padding: 0;
+  transform: rotate(-90deg);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+
+  @include vp-767 {
+    font-size: 34px;
+    transform: rotate(90deg);
+    top: auto;
+    bottom: 15%;
+    right: -20px;
+  }
+}
+
+.header__lang-switch-label {
+  color: $color-gray;
+  cursor: pointer;
+  transition: color $trans-default;
+}
+
+.header__lang-switch-control {
+  &:hover+.header__lang-switch-label {
+    color: $color-blue;
+  }
+
+  &:focus-visible+.header__lang-switch-label {
+    outline: 1px solid $color-blue;
+    outline-offset: 1px;
+  }
+
+  &:checked+.header__lang-switch-label {
+    color: $color-default-black;
+    pointer-events: none;
+  }
+}
