@@ -9,26 +9,25 @@
   <title>Denis Novik</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header" id="home" data-header>
       <div class="container">
         <nav class="header__nav" id="header-nav">
           <ul class="header__nav-list list-reset">
-            <li class="header_nav-item">
+            <li class="header__nav-item">
               <a class="header__nav-link  header__nav-link--active" href="home" data-navigation-link>Home</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header__nav-item">
               <a class="header__nav-link" href="#about" data-navigation-link>About me</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header__nav-item">
               <a class="header__nav-link" href="#skills" data-navigation-link>Skills</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header__nav-item">
               <a class="header__nav-link" href="#portfolio" data-navigation-link>Portfolio</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header__nav-item">
               <a class="header__nav-link" href="#contacts" data-navigation-link>Contacts</a>
             </li>
           </ul>
@@ -42,7 +41,7 @@
             <label class="header__lang-switch-label" for="eng">ENG</label>
           </fieldset>
         </nav>
-        <button class="header__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
+        <button class="header__burger" type="button" aria-label="Menu switcher" aria-pressed="false"
           aria-controls="header-nav" data-burger="">
           <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-burger"></use>
@@ -51,7 +50,6 @@
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-
       </div>
     </header>
     <main>
@@ -69,21 +67,23 @@
           </div>
         </div>
       </section>
-      <section class="about" id="about">
+      <section class="about" id="about" data-about="">
         <div class="container">
-          <h2>About me</h2>
-          <p>Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.
+          <h2 class="about__title" data-lang="eng" data-lang-changer="">About me</h2>
+          <p class="about__text-1" data-lang="eng">Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in
+            design and everything connected with it.
           </p>
-          <p>I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.</p>
-          <p>Ready to implement excellent projects<br> with wonderful people.</p>
+          <p class="about__text-2" data-lang="eng">I'm studying at courses "Web and mobile design<br> interfaces" in
+            IT-Academy.</p>
+          <p class="about__text-3" data-lang="eng">Ready to implement excellent projects<br> with wonderful people.</p>
         </div>
       </section>
       <section class="skills" id="skills">
         <div class="container">
           <h2>Skills</h2>
           <p>I work in such programs as</p>
-          <ul class="skills_list list-reset">
-            <li class="skills_item">
+          <ul class="skills__list list-reset">
+            <li class="skills__item">
               <figure>
                 <img src="img/png/ps.png" alt="Photoshop logo." width="89" height="89">
                 <figcaption>Adobe Photoshop</figcaption>
@@ -106,7 +106,7 @@
                 </svg>
               </span>
             </li>
-            <li class="skills_item">
+            <li class="skills__item">
               <figure>
                 <img src="img/png/ai.png" alt="llustrator logo." width="89" height="89">
                 <figcaption>Adobe llustrator</figcaption>
@@ -129,7 +129,7 @@
                 </svg>
               </span>
             </li>
-            <li class="skills_item">
+            <li class="skills__item">
               <figure>
                 <img src="img/png/ae.png" alt="After Effects logo." width="89" height="89">
                 <figcaption>Adobe<br>After Effects</figcaption>
@@ -152,7 +152,7 @@
                 </svg>
               </span>
             </li>
-            <li class="skills_item">
+            <li class="skills__item">
               <figure>
                 <img src="img/png/fgm.png" alt="Figma logo." width="58" height="89">
                 <figcaption>Figma</figcaption>
@@ -231,7 +231,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https:/instagram.com">
+            <a class="footer__social-link" href="https://instagram.com">
               <svg width="40" height="40">
                 <use xlink:href="img/sprite.svg#social-instagram"></use>
               </svg>
@@ -262,5 +262,4 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>

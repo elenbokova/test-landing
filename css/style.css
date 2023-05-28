@@ -869,6 +869,7 @@ button,
 }
 
 .about {
+  position: relative;
   padding: 80px 0 154px;
   text-align: center;
   background-color: #f6f6f6;
@@ -890,6 +891,14 @@ button,
   margin-bottom: 42px;
 }
 
+.about i {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  padding: 5px;
+  color: #6a7699;
+}
+
 .skills {
   text-align: center;
   padding: 51px 0 110px;
@@ -908,7 +917,7 @@ button,
   line-height: 21px;
 }
 
-.skills_list {
+.skills__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -916,7 +925,7 @@ button,
   gap: 90px;
 }
 
-.skills_item {
+.skills__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1377,7 +1386,7 @@ button,
     margin-bottom: 75px;
   }
 
-  .skills_list {
+  .skills__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1391,7 +1400,7 @@ button,
     gap: 82px;
   }
 
-  .skills_item {
+  .skills__item {
     width: 167px;
     min-height: 205px;
   }
