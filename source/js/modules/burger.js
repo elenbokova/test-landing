@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import {ScrollLock} from '../utils/scroll-lock';
 import {FocusLock} from '../utils/focus-lock';
 
@@ -53,10 +52,8 @@ export class Burger {
   _onBurgerClick() {
     if (this._isMenuOpen) {
       this._closeMenu();
-      console.log('_closeMenu');
     } else {
       this._openMenu();
-      console.log('_openMenu');
     }
   }
 

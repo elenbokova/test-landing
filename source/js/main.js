@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Burger} from './modules/burger';
+import {showUpdate} from './modules/update-time';
+import {initLanguageChanger} from './modules/change-language';
 
 // ---------------------------------
 
@@ -18,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const burger = new Burger();
     burger.init();
+    showUpdate();
+    initLanguageChanger();
   });
 });
 
